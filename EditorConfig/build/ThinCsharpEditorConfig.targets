@@ -1,0 +1,16 @@
+<Project>
+    <!-- <Target Name="CopyFiles" BeforeTargets="Build">
+        <ItemGroup>
+            <File Include="$(MSBuildThisFileDirectory)contentFiles\**\*.*"></File>
+        </ItemGroup>
+        <Copy SourceFiles="@(File)" DestinationFolder="$(ProjectDir)\"></Copy>
+    </Target>  -->
+    
+    <Target Name="CopyEditConfig" BeforeTargets="Build">
+       <Copy      
+            SourceFiles="$(MSBuildThisFileDirectory)../content/.editorconfig"
+            DestinationFiles="$(MSBuildProjectDirectory)\.editorconfig"
+            Condition="!Exists('$(MSBuildProjectDirectory)\.editorconfig')"
+        />
+    </Target>
+</Project>

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>ThinCsharpEditorConfig</PackageId>
+    <PackageVersion>2.0.0</PackageVersion>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Version>0.0.2</Version>
+    <Authors>Amir Mohtasebi</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include=".editorconfig" Pack="true">
+      <!-- <PackageCopyToOutput>true</PackageCopyToOutput> -->
+    </Content>
+    <Content Include="build\ThinCsharpEditorConfig.targets" PackagePath="build\ThinCsharpEditorConfig.targets" Pack="true">
+    </Content>
+  </ItemGroup>
+
+
+</Project>
