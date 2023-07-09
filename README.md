@@ -4,4 +4,4 @@ This project uses [editorconfig](https://editorconfig.org) to provide a thin but
 The project utilises nuget `contentFiles` and MSBuild `targets` to copy the editorconfig into the root folder of the project (as opposed to the bin folder). 
 
 ## Installation
-<TBD>
+TBD
