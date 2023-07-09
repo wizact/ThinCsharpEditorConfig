@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <Content Include=".editorconfig" Pack="true">
-      <!-- <PackageCopyToOutput>true</PackageCopyToOutput> -->
     </Content>
     <Content Include="build\ThinCsharpEditorConfig.targets" PackagePath="build\ThinCsharpEditorConfig.targets" Pack="true">
     </Content>
