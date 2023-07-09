@@ -225,13 +225,6 @@ csharp_preserve_single_line_statements = true
 # IDE0060: Remove unused parameter
 dotnet_diagnostic.IDE0060.severity = warning
 
-[src/{Compilers,ExpressionEvaluator,Scripting}/**Test**/*.{cs,vb}]
-
-# IDE0060: Remove unused parameter
-dotnet_diagnostic.IDE0060.severity = none
-
-[src/{Analyzers,CodeStyle,Features,Workspaces,EditorFeatures,VisualStudio}/**/*.{cs,vb}]
-
 # IDE0011: Add braces
 csharp_prefer_braces = when_multiline:warning
 # NOTE: We need the below severity entry for Add Braces due to https://github.com/dotnet/roslyn/issues/44201
