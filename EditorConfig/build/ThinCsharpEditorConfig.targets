@@ -1,5 +1,5 @@
 <Project>    
-    <Target Name="CopyEditConfig" BeforeTargets="Build">
+    <Target Name="CopyEditConfig" AfterTargets="Restore">
        <Copy      
             SourceFiles="$(MSBuildThisFileDirectory)../content/.editorconfig"
             DestinationFiles="$(MSBuildProjectDirectory)\.editorconfig"
