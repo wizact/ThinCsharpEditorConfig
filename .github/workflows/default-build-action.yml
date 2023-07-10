@@ -1,5 +1,5 @@
 name: Build and Publish Nuget Package
-run-name: ${{ github.actor }}
+run-name: Build / Publish Package by ${{ github.actor }}
 
 on:
     workflow_dispatch:
