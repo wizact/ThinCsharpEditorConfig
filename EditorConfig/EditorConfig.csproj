@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageId>ThinCsharpEditorConfig</PackageId>
-    <PackageVersion>2.0.0</PackageVersion>
+    <PackageVersion>1.0.0</PackageVersion>
     <NoDefaultExcludes>true</NoDefaultExcludes>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
