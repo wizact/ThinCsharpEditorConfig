@@ -43,6 +43,12 @@ jobs:
             - name: Build
               run: dotnet build --configuration Release --no-restore
 
+            - name: Build the NuGet package
+              run: cd ./EditorConfig && dotnet pack --configuration Release --output .\Package
+
+            # - name: Publish NuGet Package
+            #   run: dotnet nuget push ${{env.DOTNET_ROOT}}\Package\*.nupkg --api-key ${{ secrets.NUGET_KEY }} --source https://api.nuget.org/v3/index.json
+
             
 
             
